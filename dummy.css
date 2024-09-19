@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    background-color:white;
+    font-size: larger;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #ff5733;
+}
+
+.hero {
+     /* background: url('hero-bg.jpg') no-repeat center center/cover; */
+    height: 100vh; 
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    animation: slideUp 1.5s ease-out;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 20px;
+    animation: slideUp 1.5s ease-out 0.3s;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #D7CCC8;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    animation: bounce 2s infinite;
+    box-shadow: 0px 4px 8px lightsteelblue;
+}
+
+.services {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    animation: slideUp 1.5s ease-out;
+}
+
+.service-box {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.service-box div {
+    width: 30%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1.5s ease-out;
+}
+
+.service-box h3 {
+    margin-bottom: 10px;
+}
+
+.reviews {
+    padding: 50px;
+    background-color:#cdbeb9;
+}
+
+.reviews h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    animation: slideUp 1.5s ease-out;
+}
+
+.review-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-box div {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1.5s ease-out;
+}
+
+.review-box h4 {
+    margin-bottom: 10px;
+}
+
+.review-box p {
+    font-style: italic;
+}
+
+.previous-works {
+    padding: 50px;
+    background-color: #fff;
+}
+
+.previous-works h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    animation: slideUp 1.5s ease-out;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Card Style for Gym Projects */
+.card {
+    width: 30%;
+    background-color: #f9f9f9;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    animation: slideUp 1.5s ease-out;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-body h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+.card-body p {
+    font-size: 14px;
+    color: #777;
+}
+
+.contact {
+    padding: 50px;
+    background-color:#D7CCC8;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    animation: slideUp 1.5s ease-out;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    animation: slideUp 1.5s ease-out;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact input[type="submit"] {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #ff3311;
+}
+
+footer {
+    background-color:#D7CCC8 ;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+card-body p:hover{
+
+}

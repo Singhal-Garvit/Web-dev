@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Agency</title>
+    <link rel="stylesheet" href="./Style.css/dummy.css">
+    <link rel="shortcut icon" href="./assets/img4.jpeg" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>ANOVAS Agency</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#works">Previous Works</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Creative Web Solutions</h1>
+            <p>Build your digital presence with our professional web development services.</p>
+            <a href="#contact" class="cta-btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-box">
+            <div>
+                <h3>Web Design</h3>
+                <p>Custom, user-centered designs that engage and inspire.</p>
+            </div>
+            <div>
+                <h3>Web Development</h3>
+                <p>Functional, scalable websites built with the latest technologies.</p>
+            </div>
+            <div>
+                <h3>SEO Optimization</h3>
+                <p>Enhance your online visibility and drive more traffic to your site.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <h2>What Our Clients Say</h2>
+        <div class="review-box">
+            <div>
+                <h4>Rahul Gupta</h4>
+                <p>"The team did an amazing job on our website. Highly recommend!"</p>
+            </div>
+            <div>
+                <h4>Rohit jindal</h4>
+                <p>"Professional and creative, they exceeded our expectations."</p>
+            </div>
+            <div>
+                <h4>Priya Shah</h4>
+                <p>"Fantastic work! The site is fast and looks beautiful."</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Previous Works Section -->
+    <section id="works" class="previous-works">
+        <h2>Our Previous Works</h2>
+        <div class="portfolio">
+            <!-- Gym Project Cards -->
+            <div class="card">
+                <img src="./assets/imd2.png" alt="Gym Project 1">
+                <div class="card-body">
+                    <h4>Cost Checker</h4>
+                    <p>Created a user-friendly platform for small businesses to manage expenses, track cash flow, and generate detailed financial reports..</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img1.png" alt="Coaching class" >
+                <div class="card-body">
+                    <h4>Bright Future Academy</h4>
+                    <p> Built a custom e-learning platform with live class integrations, student dashboards, and online payment features for a coaching institute.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img.png" alt="Gym Project 3">
+                <div class="card-body">
+                    <h4>Powerhouse Fitness</h4>
+                    <p>A dynamic website with workout guides, membership options, and e-commerce integration for fitness products.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Web Dev Agency. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Simple Form Validation
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Message Sent Successfully!');
+        });
+    </script>
+
+</body>
+</html>
